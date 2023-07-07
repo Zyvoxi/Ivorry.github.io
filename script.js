@@ -12,12 +12,12 @@ let arr = []
 function add() {
     const numero = document.querySelector('input#numero').value.trim()
     const test = arr.indexOf(Number(numero))
-    if (isNaN(Number(numero))|| numero === '') {
+    if (isNaN(Number(numero)) || numero === '') {
         elementoAlerta.innerHTML = `<br>
-        Por Favor, adicione um valor antes de clicar em: Adicionar <br><br> <input type="button" value="OK" class="botao" onclick="fecharAlerta()"><br><br>`
+        Por Favor, adicione um número valido antes de clicar em: Adicionar <br><br> <input type="button" value="OK" class="botao" onclick="fecharAlerta()"><br><br>`
     } else if (Number(numero) < 1 || Number(numero) > 100) {
         elementoAlerta.innerHTML = `<br>
-        O numero não é valido! Por Favor adicione somente numeros entre 1 e 100 <br><br> <input type="button" value="OK" class="botao" onclick="fecharAlerta()"><br><br>`
+        O número não é valido! Por Favor adicione somente números entre 1 e 100 <br><br> <input type="button" value="OK" class="botao" onclick="fecharAlerta()"><br><br>`
     } else {
         res.innerHTML = ``
         elementoAlerta.innerHTML = ``
@@ -28,7 +28,7 @@ function add() {
             nums.appendChild(item)
         } else {
             elementoAlerta.innerHTML = `<br>
-            O numero ${Number(numero)} já foi adicionado! <br><br> <input type="button" value="OK" class="botao" onclick="fecharAlerta()"><br><br>`
+            O número ${Number(numero)} já foi adicionado! <br><br> <input type="button" value="OK" class="botao" onclick="fecharAlerta()"><br><br>`
         }
     }
 }
@@ -40,7 +40,7 @@ function fecharAlerta() {
 function finalizar() {
     if (arr.length == 0) {
         elementoAlerta.innerHTML = `<br>
-        Por Favor, Adicione um ou mais numeros! <br><br> <input type="button" value="OK" class="botao" onclick="fecharAlerta()"><br><br>`
+        Por Favor, Adicione um ou mais números! <br><br> <input type="button" value="OK" class="botao" onclick="fecharAlerta()"><br><br>`
     } else {
         elementoAlerta.innerHTML = ``
         function compareNumbers(a, b) {
