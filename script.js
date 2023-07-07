@@ -12,7 +12,7 @@ let arr = []
 function add() {
     const numero = document.querySelector('input#numero').value.trim()
     const test = arr.indexOf(Number(numero))
-    if (numero === '') {
+    if (isNaN(Number(numero))|| numero === '') {
         elementoAlerta.innerHTML = `<br>
         Por Favor, adicione um valor antes de clicar em: Adicionar <br><br> <input type="button" value="OK" class="botao" onclick="fecharAlerta()"><br><br>`
     } else if (Number(numero) < 1 || Number(numero) > 100) {
