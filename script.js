@@ -38,6 +38,7 @@ function limpar() {
     arr = []
     nums.innerHTML = `Números:<br>`
     limp.innerHTML = ``
+    res.innerHTML = ``
 }
 
 function fecharAlerta() {
